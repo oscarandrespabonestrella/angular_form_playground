@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h3>Course Review</h3>
+  <app-rating-picker formControlName="reviewRating"></app-rating-picker>
+  <div class="review-textarea" contenteditable formControlName="reviewText">
+    <h4 data-placeholder="Title..."></h4>
+    <p data-placeholder="Describe your experience"></p>
+  </div>
+  <input type="checkbox" formControlName="test">
+  <button type="submit">Save</button>
+</form>
+
+
